@@ -1,0 +1,17 @@
+formatter: markdown table
+recursive: false
+output: README.md
+output-file: README.md
+sort:
+  enabled: true
+  by: name
+sections:
+  hide:
+    - header
+    - footer
+settings:
+  indent: 2
+  escape: true
+  required: true
+  hide-default: false
+  anchor: true
