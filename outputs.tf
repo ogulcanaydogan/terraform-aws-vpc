@@ -1,9 +1,9 @@
+output "vpc_id" {
+  description = "The ID of the created VPC"
+  value       = aws_vpc.main.id
+}
 
-#### **7. Add Example Usage (`examples/basic-usage/main.tf`)**  
-```hcl
-module "vpc" {
-  source     = "../../"
-  region     = "us-east-1"
-  cidr_block = "10.0.0.0/16"
-  vpc_name   = "example-vpc"
+output "vpc_name" {
+  description = "The name of the created VPC"
+  value       = aws_vpc.main.tags["Name"]
 }
